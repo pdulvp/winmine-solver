@@ -19,10 +19,11 @@ windowManipulation.getInfo("winmine").then(function (winpos) {
 	const CLICKED = 14;
 	const FAILMINE = 10;
 	
-	function gagne(img) {
+	//Returns whether the smiley has glasses
+	function isWin(img) {
 		var hex = img.colorAt(140, 74);
 		if (hex == "000000") {
-			console.log("gagné");
+			console.log("win");
 			return true;
 		}
 		return false;
@@ -34,7 +35,7 @@ windowManipulation.getInfo("winmine").then(function (winpos) {
 		console.log(winpos.Width);
 		console.log(winpos.Height);
 		var img = robot.screen.capture(winpos.TopLeft.X, winpos.TopLeft.Y, winpos.Size.Width, winpos.Size.Height);
-		if (gagne(img)) {
+		if (isWin(img)) {
 			return [];
 		}
 
