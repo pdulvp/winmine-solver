@@ -7,7 +7,7 @@
 
 - Installation of dependencies
 ```
-> node index
+> npm install
 ```
 ### Dependencies ###
 ```
