@@ -7,11 +7,13 @@
 
 - Installation of dependencies
 ```
+> git clone https://github.com/pdulvp/window-manipulation.git ../window-manipulation
 > npm install
 ```
 ### Dependencies ###
 ```
 robotjs:^0.5.1
+window-manipulation:local
 ```
 
 ## How to use ## 
